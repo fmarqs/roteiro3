@@ -1,14 +1,14 @@
 #ifndef CONTAESPECIAL_H
 #define CONTAESPECIAL_H
 
-#include "ContaCorrente.h"
+#include "Conta.h"
 
-class ContaEspecial: public ContaCorrente
+class ContaEspecial: public Conta
 {
     public:
-        ContaEspecial();
-        ContaEspecial(std::string nomeCliente, int numero, double saldo, double salario);
-        double definirLimite();
+    ContaEspecial(std::string nomeCliente, double salarioMensal, std::string numeroCliente, double saldo);
+    void definirLimite();
+
 };
 
-#endif
+#endif 
